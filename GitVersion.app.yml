@@ -1,0 +1,6 @@
+mode: Mainline
+commit-message-incrementing: Enabled
+major-version-bump-message: '(^|\s)(feat!|BREAKING CHANGE:)'
+minor-version-bump-message: '(^|\s)feat(\(|:)'
+patch-version-bump-message: '(^|\s)(chore|fix)(\(|:)'
+no-bump-message: '(^|\s)(docs|refactor|style|test|ci)(\(|:)'

@@ -4,3 +4,7 @@ major-version-bump-message: '(^|\s)(feat!|BREAKING CHANGE:)'
 minor-version-bump-message: '(^|\s)feat(\(|:)'
 patch-version-bump-message: '(^|\s)fix(\(|:)'
 no-bump-message: '(^|\s)(chore|docs|refactor|style|test|ci)(\(|:)'
+
+branches:
+  pull-request:
+    label: pr

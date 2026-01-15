@@ -1,4 +1,4 @@
-tag_version() {
+core_tag() {
   local VERSION="$1"
   
   if [[ "${DO_TAG:-}" != "true" ]] || git rev-parse "$VERSION" >/dev/null 2>&1; then

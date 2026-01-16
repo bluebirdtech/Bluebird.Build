@@ -14,7 +14,7 @@ core_tag() {
 
   if [[ -n "${GIT_ACCESS_TOKEN:-}" ]]; then
     local AUTH
-    AUTH=$(echo -n "x-access-token:${GIT_ACCESS_TOKEN}" | base64)
+    AUTH=$(echo -n "x-access-token:${GIT_ACCESS_TOKEN}" | base64 | tr -d '\n')
     GIT_ARGS+=(-c "http.extraheader=AUTHORIZATION: basic ${AUTH}")
   fi
 
